@@ -26,7 +26,11 @@ temp = {}
 for name in names_1:
     temp[name] = 0
 
-    
+# Compare names in names_2 to names in names_1 and add
+# to the duplicates set if a duplicate
+for name in names_2:
+    if name in temp:
+        duplicates.add(name) # .add() adds elements to a Python set
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
