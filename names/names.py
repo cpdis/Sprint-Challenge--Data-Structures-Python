@@ -22,6 +22,12 @@ f.close()
 duplicates = set()
 temp = {}
 
+# Add names in names_1 to the temp dictionary
+for name in names_1:
+    temp[name] = 0
+
+    
+
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
